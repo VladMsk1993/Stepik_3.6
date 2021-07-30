@@ -6,7 +6,7 @@ import pytest
 def pytest_addoption(parser):
     parser.addoption('--browser_name', action='store', default="chrome",
                      help="Choose browser: chrome or firefox") # default откроет поулмолчанию хромбраузер.
-    parser.addoption('--language', action='store', default="Choose language: ru, en, ... (etc.)")
+    parser.addoption('--language', action='store', default="en")
 
 
 @pytest.fixture(scope="function")
